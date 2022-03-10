@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+/* font-family: 'Open Sans', sans-serif; font para o body*/
+/* font-family: 'Roboto', sans-serif; font para os títulos*/
+/*
+.color1 { #f8f8ec };
+.color2 { #aedd2b };
+.color3 { #066699 };
+.color4 { #0a5483 };
+.color5 { #02416d };
+*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8ec;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header__top{
+    width: 100%;
+    height: 80px;
+    background-color: #02416d;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.header__top a{
+    text-decoration: none;
+    color: #fff;
+}
+.header__top a:hover{
+    color:#aedd2b;
+    transition: 0.5s;
+}
+.header__title{
+    margin: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+.header__nav{
+    margin: 0 15px;
+}
+.header__nav ul{
+    display: flex;
+    list-style: none;
+}
+.header__nav li{
+    margin: 0 5px;
+    color: #f8f8ec;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.header__nav a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:#fff;
+}
+.header__nav a:hover{
+    color:#aedd2b;   
+    transition: 0.5s;
+}
+.cadastro{
+    width: 80%;
+    margin: 90px auto;
+    padding: 0;
+    border:2px solid #aedd2b;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.cadastro__title{
+    padding: 10px;
+    margin-bottom: 20px ;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-radius: 10px 10px 0 0;
+    background-color: #aedd2b ;
+    color: #02416d;
+}
+.cadastro__form{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.cadastro__inline{
+    display: flex;
+    justify-content: space-between;
+}
+.w10{
+    width: 10%;
+}
+.w20{
+    width: 20%;
+}
+.w30{
+    width: 30%;
+}
+.w35{
+    width:35%;
+}
+.w40{
+    width: 45%;
+}
+.w50{
+    width: 55%;
+}
+.w60{
+    width:65%;
+}
+.w100{
+    width: 100%;
+}
+.cadastro__label{
+    font-size: 18px;
+    font-weight: 600;
+}
+.cadastro__input{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    
+}
+#nome{
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-image: url(../images/montanhas.png);
+    background-size: 30px;
+}
+.cadastro__fildset{
+    margin: 10px 0;
+    padding: 10px;
+}
+legend{
+    font-size: 20px;
+    padding: 10px;
+}
+.cadastro__informacoes{
+    width: 100%;
+    padding: 10px;
+    margin: 40px 0 10px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background-color: #aedd2b ;
+    color: #02416d;
+}
+#dias{
+    height: 160px;
+}
+.cadastro__orientacao{
+    text-align: justify;
+}
