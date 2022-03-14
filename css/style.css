@@ -70,6 +70,12 @@ body{
     color:#aedd2b;   
     transition: 0.5s;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
 .boas__vindas{
     margin: 100px auto 20px auto;
     width: 80%;
@@ -101,12 +107,54 @@ body{
 .boas__vindas__text{
     font-size: 1.8vw;
 }
+.boas__vindas__text a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #02416d;
+}
+.boas__vindas__text a:hover{
+    color: #aedd2b;
+    transition: 0.5s;
+    font-size: 5vmin;
+}
 .boas__vindas__sub{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     font-size: 3vw;
     font-weight: 600;
     color:#02416d;
+}
+.desc__atividade{
+    width: 80%;
+    margin: 10px auto;
+}
+.desc__atividade__title{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 3vw;
+    font-weight: 600;
+    color:#02416d;
+    text-align: center;
+    margin: 20px auto;
+}
+.desc__atividade__text{
+    font-size: 1.5vw;
+    text-indent: 50px;
+    text-align: justify;
+    padding: 10px;
+}
+.desc__atividade__form{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content:center;
+    background-image: url(../images/Forms-cuate.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: contain;
+}
+.desc__atividade_list{
+    margin: auto 40px;
 }
 .cadastro{
     width: 80%;
