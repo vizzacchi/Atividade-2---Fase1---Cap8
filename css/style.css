@@ -43,7 +43,7 @@ body{
     margin: 0 15px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
-    font-size: 40px;
+    font-size: 3vw;
 }
 .header__nav{
     margin: 0 15px;
@@ -55,13 +55,13 @@ body{
 .header__nav li{
     margin: 0 5px;
     color: #f8f8ec;
-    font-size: 14px;
+    font-size: 2vw;
     font-weight: 300;
     letter-spacing: 1px;
 }
 .header__nav a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.2vw;
     font-weight: 700;
     letter-spacing: 1px;
     color:#fff;
@@ -70,30 +70,61 @@ body{
     color:#aedd2b;   
     transition: 0.5s;
 }
+.boas__vindas{
+    margin: 100px auto 20px auto;
+    width: 80%;
+}
+.boas__vindas__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    color: #aedd2b;
+    text-align: center;
+}
+.boas__vindas__desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 75%;
+}
+.boas__vindas__foto{
+    background-image: url(../images/World-amico.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15vw;
+    width: 25%;
+}
+.boas__vindas__desc__text{
+    width: 75%;
+}
+.boas__vindas__text{
+    font-size: 1.8vw;
+}
+.boas__vindas__sub{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 3vw;
+    font-weight: 600;
+    color:#02416d;
+}
 .cadastro{
     width: 80%;
-    margin: 90px auto;
+    margin: 10px auto;
     padding: 0;
     border:2px solid #aedd2b;
     background-color: #fff;
     border-radius: 10px;
-}
-.cadastro__title{
-    padding: 10px;
-    margin-bottom: 20px ;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    border-radius: 10px 10px 0 0;
-    background-color: #aedd2b ;
-    color: #02416d;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(174,221,43,1);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(174,221,43,1);
+    box-shadow: 0px 0px 10px -1px rgba(174,221,43,1);
 }
 .cadastro__form{
-    width:90%;
+    width:95%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 10px;
 }
 .cadastro__inline{
     display: flex;
@@ -124,15 +155,15 @@ body{
     width: 100%;
 }
 .cadastro__label{
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1.8vw;
+    margin-top: 10px;
 }
 .cadastro__input{
     margin-bottom: 10px;
     padding-left: 10px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.5vw;
     
 }
 #nome{
@@ -140,30 +171,127 @@ body{
     background-repeat: no-repeat;
     background-position: 10px center;
     background-image: url(../images/montanhas.png);
-    background-size: 30px;
+    background-size: 1.5vw;
 }
 .cadastro__fildset{
     margin: 10px 0;
     padding: 10px;
 }
 legend{
-    font-size: 20px;
+    font-size: 2vw;
     padding: 10px;
 }
 .cadastro__informacoes{
     width: 100%;
     padding: 10px;
-    margin: 40px 0 10px 0;
+    margin: 30px 0 10px 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5vw;
     font-weight: 900;
     letter-spacing: 2px;
     background-color: #aedd2b ;
     color: #02416d;
 }
-#dias{
-    height: 160px;
+.cadastro__funcionamento{
+    display: flex;
+    justify-content: center;
 }
-.cadastro__orientacao{
+.cadastro__dias__Semana{
+    margin: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+.cadastro__image{
+    width: 100%;
+    height: 80px;
+    background-image: url(../images/calendar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.cadastro__dia{
+    display: flex;
+    align-items: center;
+    height: 35px;  
+}
+.cadastro__chk{
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+.cadastro__label__chk{
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.cadastro__text__area{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 5px;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    font-size: 2vw;
+    color:rgb(95, 94, 94);
+}
+#exibePercent{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.foto {
+    display: none;
+}
+.cadastro__button{
+    background-color: #aedd2b;
+    color: #02416d ;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1vw auto 2vw auto;
+    padding: 1vw 4vw;
+    transition: 0.5s;
+}
+.cadastro__button:hover{
+    background-color: #02416d;
+    color: #aedd2b;
+}
+.salvar{
+    background-color: #02416d;
+    color: #aedd2b;
+}
+.salvar:hover{
+    background-color: #aedd2b;
+    color: #02416d ;
+}
+.footer{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #02416d;
+    color:#fff;
+}
+.footer__title{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    text-align: center;
+
+}
+.footer_apresentacao{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__text{
+    font-size: 1.2vw;
     text-align: justify;
+    line-height: 1.7vw;
+}
+.footer__sub{
+    font-size: 1.5vw;
+    font-weight: 700;
 }
